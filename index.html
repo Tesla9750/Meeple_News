@@ -1,0 +1,71 @@
+<DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Meeple News</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Nav Bar -->
+        <nav class="navbar">
+             <h1 class="logo">Meeple</h1>
+             <ul class="nav-links">
+                <li class="active"><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li class="ctn"><a href="#">Contacto</a></li>   
+             </ul>
+             <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        </nav>
+        <!-- Header -->
+        <header>
+            <div class="header-content">
+                <h2>Meeple News</h2> 
+                <div class="line"></div>
+                <h1>"La actualidad en tu tablero."</h1>
+                <a href="#" class="ctn">Leer Más</a>
+
+            </div>
+        </header>
+        <!-- Noticias -->
+         <section class="events">
+            <div class="title">
+                <h1>Ultimas Noticias</h2>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./img/img1.png" alt="">
+                    <h4>Éxito en el torneo local de Azul</h4>
+                    <p>Este fin de semana se celebró un emocionante torneo local del aclamado juego Azul, donde más de 20 participantes compitieron por el título de “Maestro Azulejero”.</p>
+                    <a href="#" class="ctn">Leer Más</a>
+                </div>
+                <div class="col">
+                    <img src="./img/img2.png" alt="">
+                    <h4>Cities: el nuevo lanzamiento que está conquistando mesas</h4>
+                    <p>El nuevo juego Cities, de la editorial GameForge, ya está disponible y ha causado sensación entre los fans de los juegos de construcción de ciudades.</p>
+                    <a href="#" class="ctn">Leer Más</a>
+                </div>
+            </div> 
+         </section>
+
+         <section class="explore">
+            
+         </section>
+
+        <script>
+            const menuBtn = document.querySelector('.menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+
+            menuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-menu');
+            })
+        </script>
+    </body> 
+    </html>
+    
